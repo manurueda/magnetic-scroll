@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftUIIntrospect
 
 internal struct OffsetObservingScrollView<Content: View>: View {
-    var axes: Axis.Set = [.vertical]
+    var axes: Axis.Set = [.horizontal]
     var showsIndicators = true
     @Binding var offset: CGPoint
     @ViewBuilder var content: () -> Content
